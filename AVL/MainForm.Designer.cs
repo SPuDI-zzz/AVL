@@ -1,6 +1,6 @@
 ﻿namespace AVL
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -177,7 +177,7 @@
             this.labelInsertRandom.TabIndex = 14;
             this.labelInsertRandom.Text = "Введите количество случайных значений для вставки";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,8 +197,8 @@
             this.Controls.Add(this.textBoxInsert);
             this.Controls.Add(this.treeViewBecome);
             this.Controls.Add(this.treeViewWas);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

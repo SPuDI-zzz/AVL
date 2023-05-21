@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace AVL
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         TreeAVL treeAVL;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             treeAVL = new TreeAVL();
