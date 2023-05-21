@@ -163,19 +163,19 @@ namespace AVL
 
             isValueFound = true;
 
-            if (this._right.IsEmpty())
+            if (_right.IsEmpty())
             {
                 isNeedToBalance = true;
-                return this._left;
+                return _left;
             }
 
-            if (this._left.IsEmpty())
+            if (_left.IsEmpty())
             {
                 isNeedToBalance = true;
-                return this._right;
+                return _right;
             }
 
-            this._left = RemoveNode(this._left, this, out isNeedToBalance);
+            _left = _left.RemoveNode(this, out isNeedToBalance);
             if (isNeedToBalance)
                 return BalanceLeft(ref isNeedToBalance);
 
@@ -184,6 +184,8 @@ namespace AVL
 
         public void Show(TreeView treeView)
         {
+            if (IsEmpty())
+                return;
             treeView.Nodes.Add(_value.ToString());
             ShowChilds(treeView.Nodes[0]);
         }
@@ -324,20 +326,20 @@ namespace AVL
             }
         }
 
-        private Node RemoveNode(Node node, Node parentNode, out bool isNeedToBalance)
+        private Node RemoveNode(Node parentNode, out bool isNeedToBalance)
         {
-            if (node._right.IsEmpty())
+            if (_right.IsEmpty())
             {
-                parentNode._value = node._value;
-                parentNode._count = node._count;
+                parentNode._value = _value;
+                parentNode._count = _count;
                 isNeedToBalance = true;
-                return node._left;
+                return _left;
             }
 
-            node._right = RemoveNode(node._right, parentNode, out isNeedToBalance);
-            if (isNeedToBalance)           
-                node = node.BalanceRight(ref isNeedToBalance);     
-            return node;
+            _right = _right.RemoveNode(parentNode, out isNeedToBalance);
+            if (isNeedToBalance)
+                return BalanceRight(ref isNeedToBalance);     
+            return this;
         }
 
         private bool IsEmpty() { return _count == 0; }

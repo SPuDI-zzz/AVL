@@ -49,14 +49,14 @@
             // 
             this.treeViewWas.Location = new System.Drawing.Point(12, 25);
             this.treeViewWas.Name = "treeViewWas";
-            this.treeViewWas.Size = new System.Drawing.Size(328, 413);
+            this.treeViewWas.Size = new System.Drawing.Size(328, 256);
             this.treeViewWas.TabIndex = 0;
             // 
             // treeViewBecome
             // 
             this.treeViewBecome.Location = new System.Drawing.Point(346, 25);
             this.treeViewBecome.Name = "treeViewBecome";
-            this.treeViewBecome.Size = new System.Drawing.Size(328, 413);
+            this.treeViewBecome.Size = new System.Drawing.Size(328, 256);
             this.treeViewBecome.TabIndex = 1;
             // 
             // textBoxInsert
@@ -71,7 +71,7 @@
             // 
             this.buttonInsert.Location = new System.Drawing.Point(786, 41);
             this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.Size = new System.Drawing.Size(82, 20);
             this.buttonInsert.TabIndex = 3;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             // 
             // textBoxRemove
             // 
-            this.textBoxRemove.Location = new System.Drawing.Point(680, 83);
+            this.textBoxRemove.Location = new System.Drawing.Point(680, 80);
             this.textBoxRemove.Name = "textBoxRemove";
             this.textBoxRemove.Size = new System.Drawing.Size(100, 20);
             this.textBoxRemove.TabIndex = 4;
@@ -87,9 +87,9 @@
             // 
             // buttonRemove
             // 
-            this.buttonRemove.Location = new System.Drawing.Point(786, 83);
+            this.buttonRemove.Location = new System.Drawing.Point(786, 79);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(75, 23);
+            this.buttonRemove.Size = new System.Drawing.Size(82, 20);
             this.buttonRemove.TabIndex = 5;
             this.buttonRemove.Text = "Remove";
             this.buttonRemove.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(680, 122);
+            this.buttonClear.Location = new System.Drawing.Point(680, 119);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClear.Size = new System.Drawing.Size(82, 20);
             this.buttonClear.TabIndex = 6;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             // 
             // buttonInsertRandom
             // 
-            this.buttonInsertRandom.Location = new System.Drawing.Point(786, 164);
+            this.buttonInsertRandom.Location = new System.Drawing.Point(786, 158);
             this.buttonInsertRandom.Name = "buttonInsertRandom";
-            this.buttonInsertRandom.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsertRandom.Size = new System.Drawing.Size(82, 20);
             this.buttonInsertRandom.TabIndex = 7;
             this.buttonInsertRandom.Text = "InsertRandom";
             this.buttonInsertRandom.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // 
             // textBoxInsertRandom
             // 
-            this.textBoxInsertRandom.Location = new System.Drawing.Point(680, 164);
+            this.textBoxInsertRandom.Location = new System.Drawing.Point(680, 158);
             this.textBoxInsertRandom.Name = "textBoxInsertRandom";
             this.textBoxInsertRandom.Size = new System.Drawing.Size(100, 20);
             this.textBoxInsertRandom.TabIndex = 8;
@@ -153,7 +153,7 @@
             // labelRemove
             // 
             this.labelRemove.AutoSize = true;
-            this.labelRemove.Location = new System.Drawing.Point(680, 67);
+            this.labelRemove.Location = new System.Drawing.Point(680, 64);
             this.labelRemove.Name = "labelRemove";
             this.labelRemove.Size = new System.Drawing.Size(170, 13);
             this.labelRemove.TabIndex = 12;
@@ -162,7 +162,7 @@
             // labelClear
             // 
             this.labelClear.AutoSize = true;
-            this.labelClear.Location = new System.Drawing.Point(680, 106);
+            this.labelClear.Location = new System.Drawing.Point(680, 103);
             this.labelClear.Name = "labelClear";
             this.labelClear.Size = new System.Drawing.Size(75, 13);
             this.labelClear.TabIndex = 13;
@@ -171,7 +171,7 @@
             // labelInsertRandom
             // 
             this.labelInsertRandom.AutoSize = true;
-            this.labelInsertRandom.Location = new System.Drawing.Point(677, 148);
+            this.labelInsertRandom.Location = new System.Drawing.Point(680, 142);
             this.labelInsertRandom.Name = "labelInsertRandom";
             this.labelInsertRandom.Size = new System.Drawing.Size(281, 13);
             this.labelInsertRandom.TabIndex = 14;
@@ -181,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 450);
+            this.ClientSize = new System.Drawing.Size(960, 293);
             this.Controls.Add(this.labelInsertRandom);
             this.Controls.Add(this.labelClear);
             this.Controls.Add(this.labelRemove);

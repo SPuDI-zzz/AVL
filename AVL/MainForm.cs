@@ -18,12 +18,13 @@ namespace AVL
             {
                 textBoxInsert.Clear();
                 MessageBox.Show("Некорректное значение");
+                return;
             }
 
             treeAVL.Show(treeViewWas);
             treeAVL.Insert(value);
             treeAVL.Show(treeViewBecome);
-
+            
             textBoxInsert.Clear();
             textBoxInsert.Focus();
         }
@@ -42,6 +43,7 @@ namespace AVL
             {
                 textBoxRemove.Clear();
                 MessageBox.Show("Некорректное значение");
+                return;
             }
 
             treeAVL.Show(treeViewWas);
@@ -69,6 +71,7 @@ namespace AVL
             {
                 textBoxRemove.Clear();
                 MessageBox.Show("Некорректное значение");
+                return;
             }
 
             int maxCount;
